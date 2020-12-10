@@ -56,7 +56,26 @@ export default class App {
         return multiplos;
     }
 
-    
+    obtenerImpares(numero1, numero2) {
+
+        let c;
+        let impar = 0;
+
+        if(numero2 > numero1) {
+            c = numero1;
+            numero1 = numero2;
+            numero2 = c;
+        }
+
+        for(let i = numero1; i >= numero2; i--) {
+            if(i%2 != 0) {
+                impar = impar + i + ",";
+                impar = impar.toString();
+            }
+        }
+
+        return impar;
+    }
 
 }
 let app = new App();
@@ -68,3 +87,5 @@ console.log(app.sumatoriaSerieDos(6));
 console.log(app.esPrimo(8));
 
 console.log(app.obtenerMultiplos(10,25));
+
+console.log(app.obtenerImpares(10,5));
