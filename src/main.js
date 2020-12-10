@@ -43,17 +43,20 @@ export default class App {
 
     obtenerMultiplos(inicio, fin) {
 
+        let i = inicio;
+        let multiplos = "";
         do {
             
-            if() {
-
+            if(i%3 === 0) {
+                multiplos = multiplos + `${i}`;
             }
+            i++;
+        } while (i <= fin);
 
-        } while (inicio <= fin);
-
+        return multiplos;
     }
 
-
+    
 
 }
 let app = new App();
@@ -63,3 +66,5 @@ console.log(app.sumatoriaSerieUno(6));
 console.log(app.sumatoriaSerieDos(6));
 
 console.log(app.esPrimo(8));
+
+console.log(app.obtenerMultiplos(10,25));
