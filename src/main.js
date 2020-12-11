@@ -69,7 +69,7 @@ export default class App {
 
         for(let i = numero1; i >= numero2; i--) {
             if(i%2 != 0) {
-                impar = impar + i + ",";
+                impar = impar + "," + i;
                 impar = impar.toString();
             }
         }
