@@ -59,7 +59,7 @@ export default class App {
     obtenerImpares(numero1, numero2) {
 
         let c;
-        let impar = 0;
+        let impar = 1;
 
         if(numero2 > numero1) {
             c = numero1;
